@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    "efg"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:sunflower"
+    },
+    "c": {
+      "item": "minecraft:white_wool"
+    },
+    "d": {
+      "item": "minecraft:ice"
+    },
+    "e": {
+      "item": "minecraft:redstone_block"
+    },
+    "f": {
+      "tag": "minecraft:dirt"
+    },
+    "g": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeanssourgummyworms",
+    "count": 1
+  }
+}

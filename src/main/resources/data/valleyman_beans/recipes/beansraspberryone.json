@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b",
+    "c"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:light_blue_concrete"
+    },
+    "c": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeansraspberry",
+    "count": 4
+  }
+}

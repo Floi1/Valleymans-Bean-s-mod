@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:lapis_block"
+    },
+    "c": {
+      "item": "minecraft:diamond_block"
+    },
+    "d": {
+      "item": "minecraft:elytra"
+    },
+    "e": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeanssmartiiesandskeettles",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcd",
+    " e "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:oak_sapling"
+    },
+    "c": {
+      "item": "minecraft:fern"
+    },
+    "d": {
+      "tag": "minecraft:leaves"
+    },
+    "e": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeansmintandlicorice",
+    "count": 1
+  }
+}
