@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:coal"
+    },
+    "c": {
+      "tag": "minecraft:fishes"
+    },
+    "d": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeans_braziliansushi",
+    "count": 1
+  }
+}

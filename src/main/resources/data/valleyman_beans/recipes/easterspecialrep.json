@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:rabbit"
+    },
+    "b": {
+      "item": "valleyman_beans:beanswip"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeans_easterspecial",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "tag": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "id": "valleyman_beans:valleymansbeanssmokedonions",
+    "count": 1
+  }
+}

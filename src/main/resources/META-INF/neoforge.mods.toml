@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="Apache License version 2.0"
+
+[[mods]]
+modId="valleyman_beans"
+version="9.9.0"
+displayName="valleyman beans"
+displayURL="https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortType=1&class=mc-mods"
+logoFile="logo.png"
+credits="floi"
+authors="Floi"
+description="beans"
+
+# Start of user code block mod configuration
+# End of user code block mod configuration
+
+[[dependencies.valleyman_beans]]
+    modId="neoforge"
+    type="required"
+    versionRange="[20.6.117,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.valleyman_beans]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.20.6]"
+    ordering="AFTER"
+    side="BOTH"
+
+
+
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration
