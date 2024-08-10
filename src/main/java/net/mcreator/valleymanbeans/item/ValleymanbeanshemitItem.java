@@ -32,8 +32,8 @@ public abstract class ValleymanbeanshemitItem extends ArmorItem {
 				map.put(ArmorItem.Type.CHESTPLATE, 6);
 				map.put(ArmorItem.Type.HELMET, 6);
 				map.put(ArmorItem.Type.BODY, 6);
-			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(new ResourceLocation("valleyman_beans:yellowtest"))), 2f, 0f);
-			registerHelper.register(new ResourceLocation("valleyman_beans:valleymanbeanshemit"), armorMaterial);
+			}), 9, BuiltInRegistries.SOUND_EVENT.wrapAsHolder(SoundEvents.EMPTY), () -> Ingredient.of(), List.of(new ArmorMaterial.Layer(ResourceLocation.parse("valleyman_beans:yellowtest"))), 2f, 0f);
+			registerHelper.register(ResourceLocation.parse("valleyman_beans:valleymanbeanshemit"), armorMaterial);
 			ARMOR_MATERIAL = BuiltInRegistries.ARMOR_MATERIAL.wrapAsHolder(armorMaterial);
 		});
 	}
