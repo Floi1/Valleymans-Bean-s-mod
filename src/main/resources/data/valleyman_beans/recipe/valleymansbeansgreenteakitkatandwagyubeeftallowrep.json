@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a ",
+    "bcb",
+    "de "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:beef"
+    },
+    "c": {
+      "item": "minecraft:coal"
+    },
+    "d": {
+      "item": "minecraft:sunflower"
+    },
+    "e": {
+      "tag": "minecraft:dirt"
+    }
+  },
+  "result": {
+    "id": "valleyman_beans:valleymansbeansgreenteakitkatandwagyubeeftallow",
+    "count": 1
+  }
+}
