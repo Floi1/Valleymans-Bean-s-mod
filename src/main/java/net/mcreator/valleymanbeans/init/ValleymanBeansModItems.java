@@ -10,7 +10,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.mcreator.valleymanbeans.item.ValleymansbeanstoothpasteandorangejuiceItem;
 import net.mcreator.valleymanbeans.item.ValleymansbeansthattasteItem;
@@ -60,7 +59,7 @@ import net.mcreator.valleymanbeans.item.BeansTIswordItem;
 import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 public class ValleymanBeansModItems {
-	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(BuiltInRegistries.ITEM, ValleymanBeansMod.MODID);
+	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(ValleymanBeansMod.MODID);
 	public static final DeferredHolder<Item, Item> BEANSSWORD = REGISTRY.register("beanssword", BeansswordItem::new);
 	public static final DeferredHolder<Item, Item> BEANS_T_ISWORD = REGISTRY.register("beans_t_isword", BeansTIswordItem::new);
 	public static final DeferredHolder<Item, Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK);

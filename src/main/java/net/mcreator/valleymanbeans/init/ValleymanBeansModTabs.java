@@ -74,7 +74,6 @@ public class ValleymanBeansModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(ValleymanBeansModItems.BEANSSWORD.get());
 			tabData.accept(ValleymanBeansModItems.BEANS_T_ISWORD.get());
-			tabData.accept(ValleymanBeansModItems.VALLEYMANBEANSHEMIT_HELMET.get());
 			tabData.accept(ValleymanBeansModItems.BOWBEANS.get());
 		}
 	}

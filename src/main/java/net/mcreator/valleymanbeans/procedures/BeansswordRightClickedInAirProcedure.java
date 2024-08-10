@@ -4,16 +4,18 @@ import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.core.Holder;
 
 public class BeansswordRightClickedInAirProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		itemstack.enchant(Enchantments.SHARPNESS, 10);
+		itemstack.enchant((Holder<Enchantment>) Enchantments.SHARPNESS, 10);
 		if (entity instanceof Player _player)
 			_player.giveExperiencePoints(16937);
 		if (entity instanceof Player _player) {

@@ -20,7 +20,6 @@ import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
@@ -220,12 +219,10 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			world.setBlock(BlockPos.containing(x, y + 8, z), Blocks.BOOKSHELF.defaultBlockState(), 3);
 			world.setBlock(BlockPos.containing(x, y + 9, z), Blocks.CAKE.defaultBlockState(), 3);
 		} else if (Math.random() <= 0.5) {
-			if (world instanceof ILevelExtension _ext && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
+			if (world instanceof ILevelExtension _ext && world instanceof ServerLevel _serverLevel && _ext.getCapability(Capabilities.ItemHandler.BLOCK, BlockPos.containing(x, y, z), null) instanceof IItemHandlerModifiable _itemHandlerModifiable) {
 				int _slotid = 0;
 				ItemStack _stk = _itemHandlerModifiable.getStackInSlot(_slotid).copy();
-				_stk.hurtAndBreak(10, RandomSource.create(), null, () -> {
-					_stk.shrink(1);
-					_stk.setDamageValue(0);
+				_stk.hurtAndBreak(10, _serverLevel, null, _stkprov -> {
 				});
 				_itemHandlerModifiable.setStackInSlot(_slotid, _stk);
 			}

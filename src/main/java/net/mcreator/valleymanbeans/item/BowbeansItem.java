@@ -18,6 +18,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.entity.BowbeansProjectileEntity;
@@ -35,7 +36,7 @@ public class BowbeansItem extends Item {
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 72000;
 	}
 
@@ -78,10 +79,9 @@ public class BowbeansItem extends Item {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {
 					if (stack.isDamageableItem()) {
-						stack.hurtAndBreak(1, world.getRandom(), player, () -> {
-							stack.shrink(1);
-							stack.setDamageValue(0);
-						});
+						if (world instanceof ServerLevel serverLevel)
+							stack.hurtAndBreak(1, serverLevel, player, _stkprov -> {
+							});
 					} else {
 						stack.shrink(1);
 					}
