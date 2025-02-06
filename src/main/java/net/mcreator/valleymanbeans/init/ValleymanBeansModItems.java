@@ -60,7 +60,6 @@ import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 public class ValleymanBeansModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, ValleymanBeansMod.MODID);
-	public static final RegistryObject<Item> BOWBEANS = REGISTRY.register("bowbeans", () -> new BowbeansItem());
 	public static final RegistryObject<Item> BEANSSWORD = REGISTRY.register("beanssword", () -> new BeansswordItem());
 	public static final RegistryObject<Item> BEANS_T_ISWORD = REGISTRY.register("beans_t_isword", () -> new BeansTIswordItem());
 	public static final RegistryObject<Item> LUCKYBEANSBLOCK = block(ValleymanBeansModBlocks.LUCKYBEANSBLOCK);
@@ -77,6 +76,7 @@ public class ValleymanBeansModItems {
 	public static final RegistryObject<Item> VALLEYMANSBEANSRASPBERRY = REGISTRY.register("valleymansbeansraspberry", () -> new ValleymansbeansraspberryItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE = REGISTRY.register("valleymansbeanspremiumdihydrogenmonoxide", () -> new ValleymansbeanspremiumdihydrogenmonoxideItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANS_AUSTRALIADEFINITIVEEDITION = REGISTRY.register("valleymansbeans_australiadefinitiveedition", () -> new ValleymansbeansAustraliadefinitiveeditionItem());
+	public static final RegistryObject<Item> BOWBEANS = REGISTRY.register("bowbeans", () -> new BowbeansItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANS_SEAFOODPIZZAANDCHOCOMILK = REGISTRY.register("valleymansbeans_seafoodpizzaandchocomilk", () -> new ValleymansbeansSeafoodpizzaandchocomilkItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANS_BLACKTEAANDSOYSAUCE = REGISTRY.register("valleymansbeans_blackteaandsoysauce", () -> new ValleymansbeansBlackteaandsoysauceItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANSAPPLEANDTANGERINE = REGISTRY.register("valleymansbeansappleandtangerine", () -> new ValleymansbeansappleandtangerineItem());
@@ -106,6 +106,8 @@ public class ValleymanBeansModItems {
 	public static final RegistryObject<Item> VALLEYMANSBEANS_HALLOWEENSPECIAL = REGISTRY.register("valleymansbeans_halloweenspecial", () -> new ValleymansbeansHalloweenspecialItem());
 	public static final RegistryObject<Item> VALLEYMANSBEANS_EASTERSPECIAL = REGISTRY.register("valleymansbeans_easterspecial", () -> new ValleymansbeansEasterspecialItem());
 
+	// Start of user code block custom items
+	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}

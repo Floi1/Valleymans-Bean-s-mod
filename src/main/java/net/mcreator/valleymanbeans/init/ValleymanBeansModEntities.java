@@ -16,15 +16,17 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.valleymanbeans.entity.BowbeansEntity;
+import net.mcreator.valleymanbeans.entity.BowbeansProjectileEntity;
 import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ValleymanBeansModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ValleymanBeansMod.MODID);
-	public static final RegistryObject<EntityType<BowbeansEntity>> BOWBEANS = register("projectile_bowbeans",
-			EntityType.Builder.<BowbeansEntity>of(BowbeansEntity::new, MobCategory.MISC).setCustomClientFactory(BowbeansEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BowbeansProjectileEntity>> BOWBEANS_PROJECTILE = register("bowbeans_projectile", EntityType.Builder.<BowbeansProjectileEntity>of(BowbeansProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BowbeansProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
+	// Start of user code block custom entities
+	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}

@@ -23,20 +23,22 @@ import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class BowbeansEntity extends AbstractArrow implements ItemSupplier {
-	public BowbeansEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(ValleymanBeansModEntities.BOWBEANS.get(), world);
+public class BowbeansProjectileEntity extends AbstractArrow implements ItemSupplier {
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE.get());
+
+	public BowbeansProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(ValleymanBeansModEntities.BOWBEANS_PROJECTILE.get(), world);
 	}
 
-	public BowbeansEntity(EntityType<? extends BowbeansEntity> type, Level world) {
+	public BowbeansProjectileEntity(EntityType<? extends BowbeansProjectileEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public BowbeansEntity(EntityType<? extends BowbeansEntity> type, double x, double y, double z, Level world) {
+	public BowbeansProjectileEntity(EntityType<? extends BowbeansProjectileEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public BowbeansEntity(EntityType<? extends BowbeansEntity> type, LivingEntity entity, Level world) {
+	public BowbeansProjectileEntity(EntityType<? extends BowbeansProjectileEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -48,12 +50,12 @@ public class BowbeansEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE.get());
+		return PROJECTILE_ITEM;
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(ValleymanBeansModItems.VALLEYMANSBEANSPREMIUMDIHYDROGENMONOXIDE.get());
+		return PROJECTILE_ITEM;
 	}
 
 	@Override
@@ -69,8 +71,16 @@ public class BowbeansEntity extends AbstractArrow implements ItemSupplier {
 			this.discard();
 	}
 
-	public static BowbeansEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		BowbeansEntity entityarrow = new BowbeansEntity(ValleymanBeansModEntities.BOWBEANS.get(), entity, world);
+	public static BowbeansProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+		return shoot(world, entity, source, 30f, 30, 5);
+	}
+
+	public static BowbeansProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 30f, 30, 5);
+	}
+
+	public static BowbeansProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		BowbeansProjectileEntity entityarrow = new BowbeansProjectileEntity(ValleymanBeansModEntities.BOWBEANS_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(true);
@@ -82,8 +92,8 @@ public class BowbeansEntity extends AbstractArrow implements ItemSupplier {
 		return entityarrow;
 	}
 
-	public static BowbeansEntity shoot(LivingEntity entity, LivingEntity target) {
-		BowbeansEntity entityarrow = new BowbeansEntity(ValleymanBeansModEntities.BOWBEANS.get(), entity, entity.level());
+	public static BowbeansProjectileEntity shoot(LivingEntity entity, LivingEntity target) {
+		BowbeansProjectileEntity entityarrow = new BowbeansProjectileEntity(ValleymanBeansModEntities.BOWBEANS_PROJECTILE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();

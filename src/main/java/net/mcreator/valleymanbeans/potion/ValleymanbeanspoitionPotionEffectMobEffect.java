@@ -9,18 +9,14 @@ import net.minecraft.world.effect.MobEffect;
 import net.mcreator.valleymanbeans.procedures.ValleymanbeanspoitionPotionStartedappliedProcedure;
 import net.mcreator.valleymanbeans.procedures.ValleymanbeanspoitionPotionExpiresProcedure;
 
-public class ValleymanbeanspoitionMobEffect extends MobEffect {
-	public ValleymanbeanspoitionMobEffect() {
-		super(MobEffectCategory.HARMFUL, -256);
-	}
-
-	@Override
-	public String getDescriptionId() {
-		return "effect.valleyman_beans.valleyman_beans_poition";
+public class ValleymanbeanspoitionPotionEffectMobEffect extends MobEffect {
+	public ValleymanbeanspoitionPotionEffectMobEffect() {
+		super(MobEffectCategory.NEUTRAL, -256);
 	}
 
 	@Override
 	public void addAttributeModifiers(LivingEntity entity, AttributeMap attributeMap, int amplifier) {
+		super.addAttributeModifiers(entity, attributeMap, amplifier);
 		ValleymanbeanspoitionPotionStartedappliedProcedure.execute(entity);
 	}
 

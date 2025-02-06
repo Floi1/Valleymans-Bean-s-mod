@@ -35,9 +35,9 @@ public class ValleymansbeanspremiumhohoholidayspecialItem extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Valleymans beans premium - hohoholiday special"));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeanspremiumhohoholidayspecial.description_0"));
 	}
 
 	@Override

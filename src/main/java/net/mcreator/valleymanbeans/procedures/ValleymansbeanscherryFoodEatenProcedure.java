@@ -23,7 +23,7 @@ public class ValleymansbeanscherryFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 1200, 233));
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Items.POPPED_CHORUS_FRUIT);
+			ItemStack _setstack = new ItemStack(Items.POPPED_CHORUS_FRUIT).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

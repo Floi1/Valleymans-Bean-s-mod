@@ -31,7 +31,7 @@ public class BeansTIswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 62f;
+				return 1f;
 			}
 
 			public int getLevel() {
@@ -49,15 +49,15 @@ public class BeansTIswordItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Sword"));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.valleyman_beans.beans_t_isword.description_0"));
 	}
 
 	@Override
 	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
 		super.onCraftedBy(itemstack, world, entity);
-		BeansswordRightClickedInAirProcedure.execute(entity, itemstack);
+		BeansswordRightClickedInAirProcedure.execute(world, itemstack);
 	}
 
 	@Override

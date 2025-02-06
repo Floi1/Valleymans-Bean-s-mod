@@ -15,6 +15,6 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 public class ValleymanBeansModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(ValleymanBeansModEntities.BOWBEANS.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(ValleymanBeansModEntities.BOWBEANS_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

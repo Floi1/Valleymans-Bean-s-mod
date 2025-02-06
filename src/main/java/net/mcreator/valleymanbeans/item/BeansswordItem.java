@@ -11,10 +11,8 @@ import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.valleymanbeans.procedures.BeansswordRightClickedInAirProcedure;
 import net.mcreator.valleymanbeans.init.ValleymanBeansModItems;
 
 import java.util.List;
@@ -31,7 +29,7 @@ public class BeansswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 30f;
+				return -3f;
 			}
 
 			public int getLevel() {
@@ -49,15 +47,9 @@ public class BeansswordItem extends SwordItem {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Sword"));
-	}
-
-	@Override
-	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
-		super.onCraftedBy(itemstack, world, entity);
-		BeansswordRightClickedInAirProcedure.execute(entity, itemstack);
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.valleyman_beans.beanssword.description_0"));
 	}
 
 	@Override

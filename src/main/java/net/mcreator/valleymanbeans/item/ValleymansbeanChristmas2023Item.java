@@ -26,9 +26,9 @@ public class ValleymansbeanChristmas2023Item extends Item {
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal("Valleymans bean Christmas 2023"));
+	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, level, list, flag);
+		list.add(Component.translatable("item.valleyman_beans.valleymansbean_christmas_2023.description_0"));
 	}
 
 	@Override

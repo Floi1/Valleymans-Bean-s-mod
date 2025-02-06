@@ -65,17 +65,14 @@ public class ValleymanBeansModTabs {
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_VETERANS_DAYSPECIAL.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_HALLOWEENSPECIAL.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_EASTERSPECIAL.get());
-			})
-
-					.build());
+			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(ValleymanBeansModItems.BOWBEANS.get());
 			tabData.accept(ValleymanBeansModItems.BEANSSWORD.get());
 			tabData.accept(ValleymanBeansModItems.BEANS_T_ISWORD.get());
+			tabData.accept(ValleymanBeansModItems.BOWBEANS.get());
 		}
 	}
 }

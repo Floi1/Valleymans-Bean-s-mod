@@ -24,7 +24,7 @@ public class ValleymansbeanscottoncandyFoodEatenProcedure {
 		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.HEAL, 600, 233));
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Blocks.PINK_WOOL);
+			ItemStack _setstack = new ItemStack(Blocks.PINK_WOOL).copy();
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

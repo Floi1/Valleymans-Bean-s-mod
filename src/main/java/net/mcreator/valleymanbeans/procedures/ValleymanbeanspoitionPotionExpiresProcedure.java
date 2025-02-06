@@ -17,17 +17,17 @@ public class ValleymanbeanspoitionPotionExpiresProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Blocks.DIAMOND_BLOCK);
+			ItemStack _setstack = new ItemStack(Blocks.DIAMOND_BLOCK).copy();
 			_setstack.setCount(8);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE);
+			ItemStack _setstack = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE).copy();
 			_setstack.setCount(4);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
 		if (entity instanceof Player _player) {
-			ItemStack _setstack = new ItemStack(Blocks.ENDER_CHEST);
+			ItemStack _setstack = new ItemStack(Blocks.ENDER_CHEST).copy();
 			_setstack.setCount(2);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}

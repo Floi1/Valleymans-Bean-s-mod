@@ -16,4 +16,6 @@ import net.mcreator.valleymanbeans.ValleymanBeansMod;
 public class ValleymanBeansModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, ValleymanBeansMod.MODID);
 	public static final RegistryObject<Block> LUCKYBEANSBLOCK = REGISTRY.register("luckybeansblock", () -> new LuckybeansblockBlock());
+	// Start of user code block custom blocks
+	// End of user code block custom blocks
 }
