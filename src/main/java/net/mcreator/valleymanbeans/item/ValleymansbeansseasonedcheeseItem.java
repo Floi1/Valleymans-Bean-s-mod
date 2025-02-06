@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansseasonedcheeseFoodE
 import java.util.List;
 
 public class ValleymansbeansseasonedcheeseItem extends Item {
-	public ValleymansbeansseasonedcheeseItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(20f).alwaysEdible().build()));
+	public ValleymansbeansseasonedcheeseItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.RARE).stacksTo(64).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(20f).alwaysEdible().build()));
 	}
 
 	@Override

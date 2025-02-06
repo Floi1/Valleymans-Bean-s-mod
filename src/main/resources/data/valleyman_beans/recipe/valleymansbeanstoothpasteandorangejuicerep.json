@@ -7,18 +7,10 @@
     "cdc"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:lava_bucket"
-    },
-    "c": {
-      "item": "minecraft:acacia_log"
-    },
-    "d": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:lava_bucket",
+    "c": "minecraft:acacia_log",
+    "d": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeanstoothpasteandorangejuice",

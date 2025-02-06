@@ -7,15 +7,9 @@
     "c"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:purple_dye"
-    },
-    "c": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:purple_dye",
+    "c": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeanscherry",

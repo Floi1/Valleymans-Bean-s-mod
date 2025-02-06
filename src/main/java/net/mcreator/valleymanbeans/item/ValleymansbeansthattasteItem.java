@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansthattasteoneProcedu
 import java.util.List;
 
 public class ValleymansbeansthattasteItem extends Item {
-	public ValleymansbeansthattasteItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-11).saturationModifier(-1.7f).alwaysEdible().build()));
+	public ValleymansbeansthattasteItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(-11).saturationModifier(-1.7f).alwaysEdible().build()));
 	}
 
 	@Override

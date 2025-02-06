@@ -7,15 +7,9 @@
     "aca"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:bone"
-    },
-    "b": {
-      "item": "valleyman_beans:beanswip"
-    },
-    "c": {
-      "item": "minecraft:spider_eye"
-    }
+    "a": "minecraft:bone",
+    "b": "valleyman_beans:beanswip",
+    "c": "minecraft:spider_eye"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeans_halloweenspecial",

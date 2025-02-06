@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.Valleymansbeanspremiumhohoholidays
 import java.util.List;
 
 public class ValleymansbeanspremiumhohoholidayspecialItem extends Item {
-	public ValleymansbeanspremiumhohoholidayspecialItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(20f).alwaysEdible().build()));
+	public ValleymansbeanspremiumhohoholidayspecialItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.EPIC).stacksTo(64).food((new FoodProperties.Builder()).nutrition(20).saturationModifier(20f).alwaysEdible().build()));
 	}
 
 	@Override

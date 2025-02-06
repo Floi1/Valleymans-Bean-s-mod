@@ -7,15 +7,9 @@
     "c"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:light_blue_concrete"
-    },
-    "c": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:light_blue_concrete",
+    "c": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansraspberry",

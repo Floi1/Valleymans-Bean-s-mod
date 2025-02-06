@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:water_bucket"
-    },
-    {
-      "item": "minecraft:beacon"
-    },
-    {
-      "tag": "minecraft:dirt"
-    }
+    "minecraft:water_bucket",
+    "minecraft:beacon",
+    "#minecraft:dirt"
   ],
   "result": {
     "id": "valleyman_beans:valleymansbeansclassicradiummint",

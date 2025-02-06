@@ -7,15 +7,9 @@
     "c"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:coal"
-    },
-    "c": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:coal",
+    "c": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeans_blackteaandsoysauce",

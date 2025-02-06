@@ -21,8 +21,8 @@ import net.mcreator.valleymanbeans.procedures.Valleymansbeanspremiumdihydrogenmo
 import java.util.List;
 
 public class ValleymansbeanspremiumdihydrogenmonoxideItem extends Item {
-	public ValleymansbeanspremiumdihydrogenmonoxideItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(-20).saturationModifier(-20f).alwaysEdible().build()));
+	public ValleymansbeanspremiumdihydrogenmonoxideItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.EPIC).stacksTo(64).food((new FoodProperties.Builder()).nutrition(-20).saturationModifier(-20f).alwaysEdible().build()));
 	}
 
 	@Override

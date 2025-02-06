@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeanssmokedonionsFoodEat
 import java.util.List;
 
 public class ValleymansbeanssmokedonionsItem extends Item {
-	public ValleymansbeanssmokedonionsItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
+	public ValleymansbeanssmokedonionsItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override

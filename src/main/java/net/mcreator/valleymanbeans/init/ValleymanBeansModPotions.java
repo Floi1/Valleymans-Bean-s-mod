@@ -15,5 +15,6 @@ import net.mcreator.valleymanbeans.ValleymanBeansMod;
 
 public class ValleymanBeansModPotions {
 	public static final DeferredRegister<Potion> REGISTRY = DeferredRegister.create(Registries.POTION, ValleymanBeansMod.MODID);
-	public static final DeferredHolder<Potion, Potion> VALLEYMAN_BEANS_POITION = REGISTRY.register("valleyman_beans_poition", () -> new Potion(new MobEffectInstance(ValleymanBeansModMobEffects.VALLEYMAN_BEANS_POITION, 3600, 0, false, true)));
+	public static final DeferredHolder<Potion, Potion> VALLEYMAN_BEANS_POITION = REGISTRY.register("valleyman_beans_poition",
+			() -> new Potion("valleyman_beans_poition", new MobEffectInstance(ValleymanBeansModMobEffects.VALLEYMAN_BEANS_POITION, 3600, 0, false, true)));
 }

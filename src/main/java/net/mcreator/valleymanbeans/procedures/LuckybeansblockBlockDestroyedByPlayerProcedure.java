@@ -13,11 +13,11 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.LightningBolt;
 import net.minecraft.world.entity.ExperienceOrb;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
@@ -103,37 +103,37 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			world.setBlock(BlockPos.containing(x, y + 2, z), Blocks.TNT.defaultBlockState(), 3);
 			world.setBlock(BlockPos.containing(x, y + 3, z), Blocks.TNT.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+				Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 				if (entityToSpawn != null) {
 					entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 				}
@@ -141,13 +141,13 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 		} else if (Math.random() <= 0.325) {
 			for (int index0 = 0; index0 < 5; index0++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.HUSK.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.HUSK.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.EVOKER.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.EVOKER.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
@@ -155,7 +155,7 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 			}
 			for (int index1 = 0; index1 < 15; index1++) {
 				if (world instanceof ServerLevel _level) {
-					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
+					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level, EntitySpawnReason.TRIGGERED);
 					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(x, y, z)));;
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -163,7 +163,7 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 		} else if (Math.random() <= 0.35) {
 			for (int index2 = 0; index2 < 20; index2++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.CHICKEN.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.CHICKEN.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
@@ -229,37 +229,37 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 		} else if (Math.random() <= 0.525) {
 			for (int index6 = 0; index6 < 15; index6++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.SHULKER.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.SHULKER.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.BOAT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.OAK_BOAT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.DRAGON_FIREBALL.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.DRAGON_FIREBALL.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.EGG.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.EGG.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.MAGMA_CUBE.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.MAGMA_CUBE.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
 				}
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.SLIME.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.SLIME.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
@@ -276,7 +276,7 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 		} else if (Math.random() <= 0.6) {
 			for (int index7 = 0; index7 < 35; index7++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.TNT.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}
@@ -370,7 +370,7 @@ public class LuckybeansblockBlockDestroyedByPlayerProcedure {
 		} else if (Math.random() <= 0.975) {
 			for (int index8 = 0; index8 < 50; index8++) {
 				if (world instanceof ServerLevel _level) {
-					Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), MobSpawnType.MOB_SUMMONED);
+					Entity entityToSpawn = EntityType.ZOMBIE.spawn(_level, BlockPos.containing(x, y, z), EntitySpawnReason.MOB_SUMMONED);
 					if (entityToSpawn != null) {
 						entityToSpawn.setYRot(world.getRandom().nextFloat() * 360F);
 					}

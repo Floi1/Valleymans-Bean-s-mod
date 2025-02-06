@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:coal"
-    },
-    "b": {
-      "item": "valleyman_beans:valleymansbeanspremiumhohoholidayspecial"
-    }
+    "a": "minecraft:coal",
+    "b": "valleyman_beans:valleymansbeanspremiumhohoholidayspecial"
   },
   "result": {
     "id": "valleyman_beans:valleymansbean_christmas_2023",

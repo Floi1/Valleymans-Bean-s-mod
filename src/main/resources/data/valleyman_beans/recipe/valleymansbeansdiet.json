@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:bucket"
-    },
-    {
-      "tag": "minecraft:dirt"
-    }
+    "minecraft:bucket",
+    "#minecraft:dirt"
   ],
   "result": {
     "id": "valleyman_beans:valleymansbeansextradiet",

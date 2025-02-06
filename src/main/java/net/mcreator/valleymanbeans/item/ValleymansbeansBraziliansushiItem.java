@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansBraziliansushiFoodE
 import java.util.List;
 
 public class ValleymansbeansBraziliansushiItem extends Item {
-	public ValleymansbeansBraziliansushiItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
+	public ValleymansbeansBraziliansushiItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override

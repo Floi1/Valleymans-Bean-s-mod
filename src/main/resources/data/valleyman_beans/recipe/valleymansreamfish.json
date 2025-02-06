@@ -2,21 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:water_bucket"
-    },
-    {
-      "tag": "minecraft:wool"
-    },
-    {
-      "item": "minecraft:cod"
-    },
-    {
-      "tag": "minecraft:wool"
-    },
-    {
-      "tag": "minecraft:dirt"
-    }
+    "minecraft:water_bucket",
+    "#minecraft:wool",
+    "minecraft:cod",
+    "#minecraft:wool",
+    "#minecraft:dirt"
   ],
   "result": {
     "id": "valleyman_beans:valleymansbeansdreamfish",

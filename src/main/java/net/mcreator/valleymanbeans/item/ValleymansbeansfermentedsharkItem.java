@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansfermentedsharkFoodE
 import java.util.List;
 
 public class ValleymansbeansfermentedsharkItem extends Item {
-	public ValleymansbeansfermentedsharkItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
+	public ValleymansbeansfermentedsharkItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override

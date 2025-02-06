@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansHalloweenspecialFoo
 import java.util.List;
 
 public class ValleymansbeansHalloweenspecialItem extends Item {
-	public ValleymansbeansHalloweenspecialItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(30).saturationModifier(10f).alwaysEdible().build()));
+	public ValleymansbeansHalloweenspecialItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(30).saturationModifier(10f).alwaysEdible().build()));
 	}
 
 	@Override

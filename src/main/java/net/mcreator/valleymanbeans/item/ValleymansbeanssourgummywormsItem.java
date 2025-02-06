@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeanssourgummywormsFoodE
 import java.util.List;
 
 public class ValleymansbeanssourgummywormsItem extends Item {
-	public ValleymansbeanssourgummywormsItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(3f).alwaysEdible().build()));
+	public ValleymansbeanssourgummywormsItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(3f).alwaysEdible().build()));
 	}
 
 	@Override

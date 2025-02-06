@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.BeanswipFoodEatenProcedure;
 import java.util.List;
 
 public class BeanswipItem extends Item {
-	public BeanswipItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(-11).saturationModifier(-1.7f).alwaysEdible().build()));
+	public BeanswipItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(-11).saturationModifier(-1.7f).alwaysEdible().build()));
 	}
 
 	@Override

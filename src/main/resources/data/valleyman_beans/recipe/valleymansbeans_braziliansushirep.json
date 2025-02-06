@@ -7,18 +7,10 @@
     " d "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:coal"
-    },
-    "c": {
-      "item": "minecraft:air"
-    },
-    "d": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:coal",
+    "c": "minecraft:air",
+    "d": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeans_braziliansushi",

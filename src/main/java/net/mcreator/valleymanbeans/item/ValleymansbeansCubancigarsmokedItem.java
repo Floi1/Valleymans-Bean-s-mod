@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansCubancigarsmokedFoo
 import java.util.List;
 
 public class ValleymansbeansCubancigarsmokedItem extends Item {
-	public ValleymansbeansCubancigarsmokedItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(9).saturationModifier(1f).alwaysEdible().build()));
+	public ValleymansbeansCubancigarsmokedItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(9).saturationModifier(1f).alwaysEdible().build()));
 	}
 
 	@Override

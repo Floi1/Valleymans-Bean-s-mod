@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansblueberryjamFoodEat
 import java.util.List;
 
 public class ValleymansbeansblueberryjamItem extends Item {
-	public ValleymansbeansblueberryjamItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationModifier(5f).alwaysEdible().build()));
+	public ValleymansbeansblueberryjamItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(5).saturationModifier(5f).alwaysEdible().build()));
 	}
 
 	@Override

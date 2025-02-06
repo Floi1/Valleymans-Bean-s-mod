@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansclassicradiummintFo
 import java.util.List;
 
 public class ValleymansbeansclassicradiummintItem extends Item {
-	public ValleymansbeansclassicradiummintItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
+	public ValleymansbeansclassicradiummintItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.EPIC).stacksTo(64).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build()));
 	}
 
 	@Override

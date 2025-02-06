@@ -7,15 +7,9 @@
     "c"
   ],
   "key": {
-    "a": {
-      "tag": "minecraft:dirt"
-    },
-    "b": {
-      "tag": "minecraft:sand"
-    },
-    "c": {
-      "item": "minecraft:water_bucket"
-    }
+    "a": "#minecraft:dirt",
+    "b": "#minecraft:sand",
+    "c": "minecraft:water_bucket"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeans_australiadefinitiveedition",

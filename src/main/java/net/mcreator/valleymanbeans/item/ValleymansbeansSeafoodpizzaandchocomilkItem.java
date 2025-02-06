@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansSeafoodpizzaandchoc
 import java.util.List;
 
 public class ValleymansbeansSeafoodpizzaandchocomilkItem extends Item {
-	public ValleymansbeansSeafoodpizzaandchocomilkItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(10f).alwaysEdible().build()));
+	public ValleymansbeansSeafoodpizzaandchocomilkItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(10f).alwaysEdible().build()));
 	}
 
 	@Override

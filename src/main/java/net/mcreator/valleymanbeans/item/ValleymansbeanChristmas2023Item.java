@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeanChristmas2023FoodEat
 import java.util.List;
 
 public class ValleymansbeanChristmas2023Item extends Item {
-	public ValleymansbeanChristmas2023Item() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(2f).alwaysEdible().build()));
+	public ValleymansbeanChristmas2023Item(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(2f).alwaysEdible().build()));
 	}
 
 	@Override

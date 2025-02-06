@@ -7,21 +7,11 @@
     " e "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:chicken"
-    },
-    "c": {
-      "item": "minecraft:beef"
-    },
-    "d": {
-      "item": "minecraft:porkchop"
-    },
-    "e": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:chicken",
+    "c": "minecraft:beef",
+    "d": "minecraft:porkchop",
+    "e": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansexoticmeats",

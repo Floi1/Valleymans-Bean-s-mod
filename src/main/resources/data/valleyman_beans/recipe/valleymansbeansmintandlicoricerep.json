@@ -7,21 +7,11 @@
     " e "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:oak_sapling"
-    },
-    "c": {
-      "item": "minecraft:fern"
-    },
-    "d": {
-      "tag": "minecraft:leaves"
-    },
-    "e": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:oak_sapling",
+    "c": "minecraft:fern",
+    "d": "#minecraft:leaves",
+    "e": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansmintandlicorice",

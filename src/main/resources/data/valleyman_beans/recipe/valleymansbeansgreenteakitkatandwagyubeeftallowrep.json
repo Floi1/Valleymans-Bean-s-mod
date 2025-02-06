@@ -7,21 +7,11 @@
     "de "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:beef"
-    },
-    "c": {
-      "item": "minecraft:coal"
-    },
-    "d": {
-      "item": "minecraft:sunflower"
-    },
-    "e": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:beef",
+    "c": "minecraft:coal",
+    "d": "minecraft:sunflower",
+    "e": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansgreenteakitkatandwagyubeeftallow",

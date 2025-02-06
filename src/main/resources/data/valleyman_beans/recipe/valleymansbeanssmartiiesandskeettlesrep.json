@@ -7,21 +7,11 @@
     " e "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:lapis_block"
-    },
-    "c": {
-      "item": "minecraft:diamond_block"
-    },
-    "d": {
-      "item": "minecraft:elytra"
-    },
-    "e": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:lapis_block",
+    "c": "minecraft:diamond_block",
+    "d": "minecraft:elytra",
+    "e": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeanssmartiiesandskeettles",

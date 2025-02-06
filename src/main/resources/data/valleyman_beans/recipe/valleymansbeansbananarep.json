@@ -7,18 +7,10 @@
     "cdc"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:dandelion"
-    },
-    "c": {
-      "item": "minecraft:sunflower"
-    },
-    "d": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:dandelion",
+    "c": "minecraft:sunflower",
+    "d": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansbanana",

@@ -7,18 +7,10 @@
     " d "
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:cocoa_beans"
-    },
-    "c": {
-      "item": "minecraft:emerald_block"
-    },
-    "d": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:cocoa_beans",
+    "c": "minecraft:emerald_block",
+    "d": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansavocadoandchocolatechips",

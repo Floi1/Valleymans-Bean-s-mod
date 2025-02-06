@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
-    {
-      "item": "minecraft:water_bucket"
-    },
-    {
-      "tag": "minecraft:small_flowers"
-    },
-    {
-      "tag": "minecraft:dirt"
-    }
+    "minecraft:water_bucket",
+    "#minecraft:small_flowers",
+    "#minecraft:dirt"
   ],
   "result": {
     "id": "valleyman_beans:valleymansbeans_st_patricks_day",

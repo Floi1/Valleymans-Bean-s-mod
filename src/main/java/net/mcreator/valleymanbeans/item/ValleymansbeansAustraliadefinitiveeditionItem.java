@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansAustraliadefinitive
 import java.util.List;
 
 public class ValleymansbeansAustraliadefinitiveeditionItem extends Item {
-	public ValleymansbeansAustraliadefinitiveeditionItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(1f).alwaysEdible().build()));
+	public ValleymansbeansAustraliadefinitiveeditionItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(1f).alwaysEdible().build()));
 	}
 
 	@Override

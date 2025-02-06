@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.Valleymansbeansgreenteakitkatandwa
 import java.util.List;
 
 public class ValleymansbeansgreenteakitkatandwagyubeeftallowItem extends Item {
-	public ValleymansbeansgreenteakitkatandwagyubeeftallowItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
+	public ValleymansbeansgreenteakitkatandwagyubeeftallowItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).stacksTo(64).food((new FoodProperties.Builder()).nutrition(4).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override

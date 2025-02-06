@@ -19,8 +19,8 @@ import net.mcreator.valleymanbeans.procedures.ValleymansbeansdreamfishFoodEatenP
 import java.util.List;
 
 public class ValleymansbeansdreamfishItem extends Item {
-	public ValleymansbeansdreamfishItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(5f).alwaysEdible().build()));
+	public ValleymansbeansdreamfishItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.EPIC).stacksTo(64).food((new FoodProperties.Builder()).nutrition(10).saturationModifier(5f).alwaysEdible().build()));
 	}
 
 	@Override

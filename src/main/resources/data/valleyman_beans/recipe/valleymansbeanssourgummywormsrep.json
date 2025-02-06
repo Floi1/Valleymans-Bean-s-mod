@@ -7,27 +7,13 @@
     "efg"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:sunflower"
-    },
-    "c": {
-      "item": "minecraft:white_wool"
-    },
-    "d": {
-      "item": "minecraft:ice"
-    },
-    "e": {
-      "item": "minecraft:redstone_block"
-    },
-    "f": {
-      "tag": "minecraft:dirt"
-    },
-    "g": {
-      "item": "minecraft:emerald"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:sunflower",
+    "c": "minecraft:white_wool",
+    "d": "minecraft:ice",
+    "e": "minecraft:redstone_block",
+    "f": "#minecraft:dirt",
+    "g": "minecraft:emerald"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeanssourgummyworms",

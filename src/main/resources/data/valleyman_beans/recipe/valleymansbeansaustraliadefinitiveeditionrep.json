@@ -7,18 +7,10 @@
     "cd"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:water_bucket"
-    },
-    "b": {
-      "item": "minecraft:lava_bucket"
-    },
-    "c": {
-      "item": "minecraft:beetroot"
-    },
-    "d": {
-      "tag": "minecraft:dirt"
-    }
+    "a": "minecraft:water_bucket",
+    "b": "minecraft:lava_bucket",
+    "c": "minecraft:beetroot",
+    "d": "#minecraft:dirt"
   },
   "result": {
     "id": "valleyman_beans:valleymansbeansextraspicyraisins",

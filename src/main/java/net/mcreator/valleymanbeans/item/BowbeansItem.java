@@ -6,16 +6,16 @@ import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
+import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
@@ -26,13 +26,13 @@ import net.mcreator.valleymanbeans.entity.BowbeansProjectileEntity;
 import java.util.List;
 
 public class BowbeansItem extends Item {
-	public BowbeansItem() {
-		super(new Item.Properties().durability(100).rarity(Rarity.COMMON));
+	public BowbeansItem(Item.Properties properties) {
+		super(properties.rarity(Rarity.COMMON).durability(100));
 	}
 
 	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
+	public ItemUseAnimation getUseAnimation(ItemStack itemstack) {
+		return ItemUseAnimation.BOW;
 	}
 
 	@Override
@@ -59,10 +59,10 @@ public class BowbeansItem extends Item {
 	}
 
 	@Override
-	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
-		InteractionResultHolder<ItemStack> ar = InteractionResultHolder.fail(entity.getItemInHand(hand));
+	public InteractionResult use(Level world, Player entity, InteractionHand hand) {
+		InteractionResult ar = InteractionResult.FAIL;
 		if (entity.getAbilities().instabuild || findAmmo(entity) != ItemStack.EMPTY) {
-			ar = InteractionResultHolder.success(entity.getItemInHand(hand));
+			ar = InteractionResult.SUCCESS;
 			entity.startUsingItem(hand);
 		}
 		return ar;
