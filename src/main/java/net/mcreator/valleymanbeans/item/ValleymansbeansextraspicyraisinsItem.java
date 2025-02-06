@@ -32,7 +32,7 @@ public class ValleymansbeansextraspicyraisinsItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans beans extra spicy raisins"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeansextraspicyraisins.description_0"));
 	}
 
 	@Override

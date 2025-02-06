@@ -55,7 +55,7 @@ public class BowbeansItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("dev tool"));
+		list.add(Component.translatable("item.valleyman_beans.bowbeans.description_0"));
 	}
 
 	@Override

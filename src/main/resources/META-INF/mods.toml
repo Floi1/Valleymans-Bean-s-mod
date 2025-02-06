@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[4,)"
+loaderVersion="[47,)"
 license="Apache License version 2.0"
 
 [[mods]]
 modId="valleyman_beans"
-version="10.9.1"
+version="7.9.1"
 displayName="valleyman beans"
 displayURL="https://www.curseforge.com/minecraft/search?page=1&pageSize=20&sortType=1&class=mc-mods"
 logoFile="logo.png"
@@ -16,16 +16,9 @@ description="beans"
 # End of user code block mod configuration
 
 [[dependencies.valleyman_beans]]
-    modId="neoforge"
-    type="required"
-    versionRange="[21.1.65,)"
-    ordering="AFTER"
-    side="BOTH"
-
-[[dependencies.valleyman_beans]]
     modId="minecraft"
-    type="required"
-    versionRange="[1.21.1]"
+    mandatory=true
+    versionRange="[1.20.1]"
     ordering="AFTER"
     side="BOTH"
 

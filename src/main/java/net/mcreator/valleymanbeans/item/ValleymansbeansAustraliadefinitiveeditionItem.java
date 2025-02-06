@@ -32,7 +32,7 @@ public class ValleymansbeansAustraliadefinitiveeditionItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans beans Australia definitive edition"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeans_australiadefinitiveedition.description_0"));
 	}
 
 	@Override

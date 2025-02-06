@@ -32,7 +32,7 @@ public class ValleymansbeanChristmas2023Item extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans bean Christmas 2023"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbean_christmas_2023.description_0"));
 	}
 
 	@Override

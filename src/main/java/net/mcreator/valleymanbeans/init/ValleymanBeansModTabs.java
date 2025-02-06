@@ -65,9 +65,7 @@ public class ValleymanBeansModTabs {
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_VETERANS_DAYSPECIAL.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_HALLOWEENSPECIAL.get());
 				tabData.accept(ValleymanBeansModItems.VALLEYMANSBEANS_EASTERSPECIAL.get());
-			})
-
-					.build());
+			}).build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {

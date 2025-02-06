@@ -32,7 +32,7 @@ public class ValleymansbeansVeteransDayspecialItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans beans Veterans Day special"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeans_veterans_dayspecial.description_0"));
 	}
 
 	@Override

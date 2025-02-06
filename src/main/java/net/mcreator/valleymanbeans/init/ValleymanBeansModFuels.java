@@ -16,6 +16,6 @@ public class ValleymanBeansModFuels {
 	public static void furnaceFuelBurnTimeEvent(FurnaceFuelBurnTimeEvent event) {
 		ItemStack itemstack = event.getItemStack();
 		if (itemstack.getItem() == ValleymanBeansModItems.BEANSWIP.get())
-			event.setBurnTime(1600000);
+			event.setBurnTime(16);
 	}
 }

@@ -12,6 +12,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.valleymanbeans.procedures.ValleymansbeanspremiumdihydrogenmonoxideFoodEatenProcedure;
@@ -39,7 +40,7 @@ public class ValleymansbeanspremiumdihydrogenmonoxideItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans beans premium dihydrogen monoxide"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeanspremiumdihydrogenmonoxide.description_0"));
 	}
 
 	@Override
@@ -53,8 +54,8 @@ public class ValleymansbeanspremiumdihydrogenmonoxideItem extends Item {
 	}
 
 	@Override
-	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-		boolean retval = super.onEntitySwing(itemstack, entity);
+	public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity, InteractionHand hand) {
+		boolean retval = super.onEntitySwing(itemstack, entity, hand);
 		ValleymansbeanspremiumdihydrogenmonoxideEntitySwingsItemProcedure.execute(entity);
 		return retval;
 	}

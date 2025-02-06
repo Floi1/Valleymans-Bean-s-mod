@@ -38,7 +38,7 @@ public class ValleymansbeansclassicradiummintItem extends Item {
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Valleymans beans classic radium mint"));
+		list.add(Component.translatable("item.valleyman_beans.valleymansbeansclassicradiummint.description_0"));
 	}
 
 	@Override

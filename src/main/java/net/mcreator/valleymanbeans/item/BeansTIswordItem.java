@@ -56,20 +56,20 @@ public class BeansTIswordItem extends SwordItem {
 	};
 
 	public BeansTIswordItem() {
-		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 63f, 1f)).fireResistant());
+		super(TOOL_TIER, new Item.Properties().attributes(SwordItem.createAttributes(TOOL_TIER, 4f, 1f)).fireResistant());
 	}
 
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void appendHoverText(ItemStack itemstack, Item.TooltipContext context, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, context, list, flag);
-		list.add(Component.literal("Sword"));
+		list.add(Component.translatable("item.valleyman_beans.beans_t_isword.description_0"));
 	}
 
 	@Override
 	public void onCraftedBy(ItemStack itemstack, Level world, Player entity) {
 		super.onCraftedBy(itemstack, world, entity);
-		BeansswordRightClickedInAirProcedure.execute(entity, itemstack);
+		BeansswordRightClickedInAirProcedure.execute(world, itemstack);
 	}
 
 	@Override
